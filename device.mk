@@ -24,9 +24,5 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc
 
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
-
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk)
